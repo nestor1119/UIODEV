@@ -1,6 +1,13 @@
 h1 {
   color: red;
   font-weight: 700;
+  text-align: center;
+
+}
+h2 {
+
+text-align: center;
+
 }
 ul li{
   display: inline-block;
@@ -26,23 +33,38 @@ box-sizing: border-box;
   grid-column-start: 1;
   grid-column-end: 4;
 }
+.projectsspace{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+.projectstitle{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
 .project1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 .project2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 .project3{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 .workexpirience{
   grid-column-start: 1;
