@@ -2,14 +2,18 @@ h1 {
   color: red;
   font-weight: 700;
   text-align: center;
-
+margin: 0;
 }
 h2 {
-
+margin: 0;
 text-align: center;
 
 }
+p{
+  text-align: center;
+}
 ul li{
+
   display: inline-block;
 }
 body{
@@ -32,15 +36,21 @@ box-sizing: border-box;
 .header{
   grid-column-start: 1;
   grid-column-end: 4;
+  border: 3px solid #000000;
+
 }
 .projectsspace{
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  border: 3px solid #000000;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
+gap: 10px;
+padding: 10px;
+box-sizing: border-box;
 }
 .projectstitle{
   grid-column-start: 1;
@@ -53,22 +63,32 @@ grid-template-rows: 1fr 1fr 1fr;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 4;
+  border: 3px solid #000000;
 }
 .project2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
+  border: 3px solid #000000;
 }
 .project3{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
+  border: 3px solid #000000;
 }
 .workexperience{
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  border: 3px solid #000000;
+}
+.imgme{
+  max-width: 100%;
+  display: block;
+  height: 200px;
+  width: 200px;
 }
