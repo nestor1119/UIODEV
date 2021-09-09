@@ -41,6 +41,7 @@ function addcountry() {
   //deleteButton.onclick = deletecountry();
   //test when delete button activates
   deleteButton.onclick = console.log("hi");
+
   var all = document.querySelectorAll("#list1 li");
   searchField.addEventListener("keyup", (e)=> {
 console.log(e.target.value);
