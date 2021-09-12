@@ -21,6 +21,7 @@ searchBox.addEventListener('keyup', (e) => {
 
   //make list of all li btw its an array i think
   const allLi = document.querySelectorAll('ul li');
+  const allLiBut = document.querySelectorAll('ul button');
   //console.log (allLi[0].innerText);
   //creo q tengo q hacerlo adentro del add
   //funciona dentro del add
@@ -30,9 +31,11 @@ searchBox.addEventListener('keyup', (e) => {
     let temp1 = allLi[i].innerText.toLowerCase();
     if(temp1.indexOf(search) == -1){
         allLi[i].classList.add("hide");
+        allLiBut[i].classList.add("hide");
     }
     else {
       allLi[i].classList.remove("hide");
+      allLiBut[i].classList.remove("hide");
     }
   }
 });
