@@ -2,6 +2,8 @@
 const countryInput = document.querySelector('.countryInput');
 const countryButton = document.querySelector('.countryButton');
 const countryList = document.querySelector('.countryList');
+const searchBox = document.getElementById('searchInput');
+
 //test 3a
 let tet1= isitin('saturday','sat');
 console.log(tet1);
@@ -12,6 +14,28 @@ console.log(tet2);
 //event listeners
 countryButton.addEventListener("click",addCountry);
 countryList.addEventListener('click',deletelist);
+searchBox.addEventListener('keyup', (e) => {
+  console.log(e.target.value);
+  //make e value to lowercase
+  let search = e.target.value.toLowerCase();
+
+  //make list of all li btw its an array i think
+  const allLi = document.querySelectorAll('ul li');
+  //console.log (allLi[0].innerText);
+  //creo q tengo q hacerlo adentro del add
+  //funciona dentro del add
+  //go through each li element
+  for (var i = 0; i < allLi.length-1; i++) {
+    //make the content inside lowercase preguntarno deberia ser allLi[i]
+    let temp1 = allLi[i].innerText.toLowerCase();
+    if(temp1.indexOf(search) == -1){
+        allLi[i].classList.add("hide");
+    }
+    else {
+      allLi[i].classList.remove("hide");
+    }
+  }
+});
 
 //functions
 function addCountry(event){
