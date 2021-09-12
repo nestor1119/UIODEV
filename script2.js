@@ -29,7 +29,7 @@ searchBox.addEventListener('keyup', (e) => {
   for (var i = 0; i < allLi.length-1; i++) {
     //make the content inside lowercase preguntarno deberia ser allLi[i]
     let temp1 = allLi[i].innerText.toLowerCase();
-    if(temp1.indexOf(search) == -1){
+    if(isitin(temp1,search) == false){
         allLi[i].classList.add("hide");
         allLiBut[i].classList.add("hide");
     }
