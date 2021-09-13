@@ -19,15 +19,14 @@ searchBox.addEventListener('keyup', (e) => {
   //make e value to lowercase
   let search = e.target.value.toLowerCase();
 
-  //make list of all li btw its an array i think
+  //make list of all li
   const allLi = document.querySelectorAll('ul li');
   const allLiBut = document.querySelectorAll('ul button');
   //console.log (allLi[0].innerText);
-  //creo q tengo q hacerlo adentro del add
-  //funciona dentro del add
+
   //go through each li element
-  for (var i = 0; i < allLi.length-1; i++) {
-    //make the content inside lowercase preguntarno deberia ser allLi[i]
+  for (var i = 0; i < allLi.length; i++) {
+    //make the content inside lowercase
     let temp1 = allLi[i].innerText.toLowerCase();
     if(isitin(temp1,search) == false){
         allLi[i].classList.add("hide");
@@ -71,12 +70,12 @@ function deletelist(e){
     noe.remove();
   }
 }
-
+//3a
 function isitin(element,searchword){
 var result= element.startsWith(searchword);
 return result;
 }
-
+//3b
 function searcharray(listArray,searchWord){
   var resultlist = [];
   let x=0;
